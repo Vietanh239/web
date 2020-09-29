@@ -1,0 +1,222 @@
+* {margin: 0; border: 0; padding: 0; outline: none;}
+html, body {
+    background-color: rgb(249, 247, 237);
+    font-family: 'Cutive Mono', monospace;
+}
+.fa,.fab,.fal,.far,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}
+.fa-search:before{content:"\f002"}.fa-search-minus:before{content:"\f010"}.fa-search-plus:before{content:"\f00e"}
+.fa,.far,.fas{font-family:Font Awesome\ 5 Free}.fa,.fas{font-weight:900}
+.header_menu ul { padding: 0; margin: 0; }
+.header_menu ul li { display: inline-block; padding: 19px 10px 19px; position: relative; }
+
+.header_menu ul li:before {
+	position: absolute; content: ''; bottom: 0; left: 0;
+	width: 100%; opacity: 0; -webkit-transform: scale(0, 1);
+	transform: scale(0, 1); -webkit-transform-origin: left center;
+	transform-origin: left center; border-bottom: 4px solid #EA8025;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s; }
+
+.header_menu ul li.active:after{
+	content: ''; position: absolute;
+	height: 4px; background: #EA8025; bottom: 0;
+	left: 0; width: 100%; z-index: 9; }
+
+.header_menu ul li a{
+	display: block; color: #fff; font-size: 18px; line-height: 22px;
+	font-weight: 700; font-family: 'BebasNeue','Lato', "Times New Roman", serif; }
+
+.header_menu ul ul li{ padding: 12px 10px; float: none; display: block;}
+
+.header_menu ul ul li a{ color: #000; }
+
+#navbar {
+	padding: 5px 20px;
+	min-width: 150px;
+	background-color: rgba(249, 120, 8, 0.95);
+	border-bottom-left-radius: 20px;
+	position: fixed;
+	top: 0px;
+	right: -240px;
+	transition: all 0.3s;
+	box-shadow: -1px 1px 2px rgb(249, 247, 237);
+}
+	#navbar:hover {
+		top: 0;
+		right: 0;
+	}
+	#navbar:before {
+		content: "";
+		border-top: 20px solid transparent;
+		border-bottom: 20px solid transparent;
+		border-right: 40px solid rgba(249, 120, 8, 0.95);
+		background-color: transparent;
+		border-radius: 10%;
+		position: absolute;
+		top: 4px;
+		left: -44px;
+	}
+	#navbar a {
+		margin: 10px 0;
+		font-family: 'Monoton', cursive;
+		text-decoration: none;
+		color: rgb(249, 247, 237);
+		font-weight: 100;
+		font-size: 40px;
+		text-align: left;
+		display: block;
+	}
+#welcome-section {
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Monoton', cursive;
+	position: relative;
+}
+	#welcome-section h1, #welcome-section h2 {
+		font-size: 15vw;
+		font-weight: 100;
+		letter-spacing: 15px;
+		color: rgb(249, 120, 8);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -70%) skewX(-27deg);
+	}
+	#welcome-section h2 {
+		padding: 5px 20px 5px 30px;
+		font-size: 3vw;
+		letter-spacing: 10px;
+		border-radius: 100px;
+		background-color: rgb(249, 120, 8);
+		color: rgb(249, 247, 237);
+		transform: translate(-50%, 30%) skewX(27deg);
+	}
+#menus {
+	padding: 20px 0;
+	width: 100vw;
+	min-height: 100vh;
+	background-color: rgb(249, 120, 8);
+}
+	#menus div.section-title {
+		text-align: center;
+		font-family: 'Monoton', cursive;
+		font-size: 55px;
+		color: rgb(249, 247, 237);
+		border-bottom: 2px solid rgb(249, 247, 237);
+	}
+	#menus div.menu-tile {
+		margin: 5vw 4vw;
+		width: 41vw;
+		height: 23vw;
+		box-shadow: 0 0 1px rgb(249, 247, 237);
+		display: inline-block;
+		position: relative;
+	}
+		#menus div.menu-tile header.menu-title {
+			padding: 10px 0;
+			width: 100%;
+			text-align: center;
+			font-size: 25px;
+			color: rgb(249, 247, 237);
+			background-color: rgba(249, 120, 8, 0.75);
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		#menus div.menu-tile div {
+			width: 100%;
+			height: 100%;
+		}
+			#menus div.menu-tile div iframe {
+				width: 100%;
+				height: 100%;
+			}
+			#menus div.menu-tile div a {
+				padding: 10px 0;
+				width: 100%;
+				color: rgb(249, 247, 237);
+				background-color: rgba(249, 120, 8, 0.75);
+				font-size: 25px;
+				text-decoration: none;
+				text-align: center;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+#contact-section {
+	width: 100vw;
+	min-height: 100vh;
+}
+	#contact-section div.section-title {
+		padding: 20px 0;
+		text-align: center;
+		font-family: 'Monoton', cursive;
+		font-size: 55px;
+		color: rgb(249, 120, 8);
+		border-bottom: 2px solid rgb(249, 120, 8);
+	}
+	#contact-section form {
+		margin: auto;
+		margin-top: 20px;
+		width: 60vw;
+	}
+		#contact-section form div input, #contact-section form div textarea, #contact-section form div button {
+			margin: 10px 0;
+			padding: 10px 0;
+			width: 100%;
+			font-size: 15px;
+			background-color: transparent;
+			color: rgb(249, 120, 8);
+			border: 1px dotted rgb(249, 120, 8);
+			border-radius: 5px;
+		}
+		#contact-section form div button {
+			margin: auto;
+			width: 50%;
+			display: block;
+			cursor: pointer;
+			transition: all 0.2s;
+		}
+			#contact-section form div button:hover {
+				color: rgb(249, 247, 237);
+				background-color: rgb(249, 120, 8);
+			}
+			#contact-section form div textarea::-webkit-input-placeholder, #contact-section form div input::-webkit-input-placeholder {
+				color: rgba(249, 120, 8, 0.5);
+			}
+			#contact-section form div textarea::-moz-placeholder, #contact-section form div input::-moz-placeholder {
+				color: rgba(249, 120, 8, 0.5);
+			}
+			#contact-section form div textarea::-ms-input-placeholder, #contact-section form div input::-ms-input-placeholder {
+				color: rgba(249, 120, 8, 0.5);
+			}
+.footer {
+	margin-top: 20px;
+	padding: 20px 0;
+	width: 100vw;
+	color: rgb(249, 120, 8);
+	text-align: center;
+	border-top: 1px solid rgb(249, 120, 8);
+}
+	.footer a {
+		color: rgb(249, 120, 8);
+		text-decoration: none;
+	}
+	.loader_overlay {position: fixed;z-index: 9999;width: 100%;height: 100%;left: 0;top: 0;background-color: #fff;-webkit-transition: all .1s ease;-o-transition: all .1s ease;transition: all .1s ease;opacity: 1;visibility: visible;}.loader_overlay.loaded {opacity: 0;visibility: hidden;z-index: -2;}
+@media only screen and (max-width: 875px) {
+	#welcome-section h2 {
+		width: 80vw;
+		text-align: center;
+	}
+	#menus div.menu-tile {
+		margin: 5vw;
+		width: 90vw;
+		height: 51vw;
+	}
+	#contact-section form {
+		width: 90%;
+	}
+}
+.hidden{display:none !important}
