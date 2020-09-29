@@ -7,47 +7,56 @@
         <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Monoton" rel="stylesheet">
         <link rel="stylesheet" href="theme.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="shortcut icon" href="//theme.hstatic.net/1000075078/1000610097/14/favicon.png?v=593" type="image/png" /> 
+        <link rel="shortcut icon" href="favicon.png" type="image/png" /> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <meta charset="utf-8" />
         <title>Photocopy</title>
         <h1 class="hidden"><a class="logo-name" title="Photocopy">Photocopy</a></h1>
         <div class="header-menu">
-             <ul class="clear-fix">
-                <a href="" title="Sách in">Sách in</a>
-                 <li class="has_child">
-                        <ul class="menu_child" id="menu_child_1_1">
-                            <li><a href="" title="Sách in">Lập trình</a></li>
-                            <li><a href="" title="Sách in">Toán học</a></li>
-                            <li><a href="" title="Sách in">Chính trị</a></li>
-                        
-                        </ul>
-                 </li>
-                 <li class="has_child">
-                    <a href="" title="về chúng tôi">Về chúng tôi</a>
-                    <ul class="menu_child" id="menu_child_2_2">
-                        <li><a href="" title="về chúng tôi">Tìm hiểu những trang web</a></li>
-                        <li><a href="" title="về chúng tôi">Quyết định</a></li>
-                        <li><a href="" title="về chúng tôi">Ứng dụng</a></li>
-                    </ul> 
-                </li>
-                <li ><a href="" title="Đặt hàng">Đặt hàng</a></li>
-                <li ><a href="" title="Ưu đãi thành viên">Ưu đãi thành viên</a></li>
-                <li ><a href="" title="Tin tức">Tin tức</a></li>
-                <li class="search hidden-xs hidden-sm">
-                    <a><i class="fas fa-search"></i></a>
-                    <div class="search_input_wrap">
-                        <form class="search_form" action="/search">
-                            <div class="search-radio">
-                                <input type="radio" name="type" value="product" checked="checked"><span>Sách</span>
-                                <input type="radio" name="type" value="article"><span>Tin tức</span>
-                            </div>
-                            <div class="search-inner">
-                                <input required="" name="q" maxlength="40" autocomplete="off" class="search-input" type="text" size="20" placeholder="Tìm kiếm ...">
-                                <button type="submit" class="btn-search btn" id="search-header-btn"><i class="fas fa-search"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                </li>
+            <div class="dropdown">
+                <button class="dropbtn">Sách in</button>
+                <div class="dropdown-content">
+                   <a href="" title="Sách in">Lập trình</a>
+                   <a href="" title="Sách in">Toán học</a>
+                   <a href="" title="Sách in">Chính trị</a>
+                </div>
+              </div>
+              
+              <div class="dropdown">
+                <button class="dropbtn">Về chúng tôi</button>
+                <div class="dropdown-content">
+                  <a href="" title="Về chúng tôi">Tìm hiểu những trang web</a>
+                  <a href="" title="Về chúng tôi">Quyết định</a>
+                  <a href="" title="Về chúng tôi">Ứng dụng</a>
+                </div>
+              
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Đặt hàng</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Ưu đãi thành viên</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Tin tức</button>
+            </div>
+            <div class="dropdown">
+                <div>
+                    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+                    <i class="material-icons" style="font-size:60px">search</i>
+                </div>
+                <div class="dropdown-content">
+                    <input type="radio" id="book" name="search" value="book" checked="checked">
+                    <label for="male">Sách</label>&emsp;
+                    <input type="radio" id="news" name="search" value="news">
+                    <label for="female">Tin tức</label><br>
+                    <span>
+                        <input type="text" placeholder="Tìm kiếm ...">
+                        <i class="material-icons">search</i>
+                    </span>
+
+                </div>
+            </div>
              </ul>
         </div>
     </head>
