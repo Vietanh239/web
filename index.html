@@ -5,11 +5,13 @@
     <link rel="icon" href="favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Monoton" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="/icofont/icofont.min.css" rel="stylesheet">
+    <link href="/icofont.min.css" rel="stylesheet">
     <!-- Boottrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <script src="make_function.js"></script>
    <link rel="stylesheet" href="theme.css">
     <title>Fairy & Zịt Anh</title>
@@ -18,19 +20,21 @@
     <!-- ======= Top Bar ======= -->
     <div id="top_bar">
           <i class="icofont-phone"></i> +89 123 456 789&emsp;
-          <i class ="icofont-clock-time"></i>Date/Time: <i id="date_time"></i>
-          <span ><i class="icofont-location-pin"></i>UIT</span>
-          <span id="login"> <i class="icofont-facebook-messenger" ></i> Đăng nhập</span>
+          <i class ="icofont-clock-time"></i>&nbsp;Date/Time: <i id="date_time"></i>&emsp;
+          <span ><i class="icofont-location-pin"></i>&nbsp;UIT</span>
+          <span id="login"></i><u>Đăng nhập</u></span>
+          <span id="login" >&nbsp;/&nbsp;</span>
+          <span id="login"> <i class="icofont-ui-user"></i>&nbsp;&nbsp;<u>Đăng ký</u></span>
     </div>
   
     <!-- ======= Header ======= -->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse" style="display: flex;    align-items: center; "">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">PHOTOCOPY</a>
+          <div class="navbar-header"> 
+            <a class="navbar-brand" href="#" style="margin: 0px 40px 0px -50px;">&emsp;PHOTOCOPY</a>
           </div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active" ><a href="#">Home</a></li>
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Về chúng tôi <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Tìm hiểu những trang web</a></li>
@@ -38,7 +42,7 @@
                 <li><a href="#">Ứng dụng</a></li>
               </ul>
             </li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Danh sách sách<span class="caret"></span></a>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Danh sách sách <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Lập trình</a></li>
                 <li><a href="#">Toán học</a></li>
@@ -49,7 +53,8 @@
             <li><a href="#">Thành viên</a></li>
             <li><a href="#">Tin tức mới</a></li>
             <li><a href="#">Tuyển dụng</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Find something<span class="caret"></a>
+            <li><a href="#">Đánh giá</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Find something<span class="material-icons" id="icon_search">search</i></a>
               <ul class="dropdown-menu">
                   <input type="radio" id="book" name="search" value="book" checked="checked">
                   <label for="male">Sách</label>&emsp;
@@ -59,7 +64,7 @@
                   <input type="text" placeholder="&nbsp;Tìm kiếm ...">
                   <i class="material-icons">search</i>
                   </span>
-              </ul >
+              </ul >              
             </li>
           </ul>
         </div>
@@ -67,106 +72,101 @@
     <!-- End Header -->
 
     <main>
-      <!-- Slider -->
-      <section id="slide">
-        <div class="w3-content w3-section" style="width: 400px; height: 400px;">
-          <img class="mySlides" src="https://i.pinimg.com/474x/75/d9/f1/75d9f12f432bc9dd5d62c8abf7aed7ee.jpg">
-          <img class="mySlides" src="https://i.pinimg.com/474x/65/2f/1a/652f1af9304483ffc376e1c20e1b0469.jpg">
-        </div>          
-      </section>
-      <!-- End slider -->
-      
+      <!-- Carousel -->
+      <div class="img_notice">
+        <div class="box"><img src="https://korea.net.vn/wp-content/uploads/2017/07/du-h%E1%BB%8Dc-h%C3%A0n-qu%E1%BB%91c-ng%C3%A0nh-To%C3%A1n-h%E1%BB%8Dc.jpg"><span>Toán học</span> </div>
+        <div class="box"><img src="https://jb.com.vn/uploads/kien-thuc-dai-hoc/th.jpg"><span>Triết học</span> </div>
+        <div class="box"><img src="https://hcmuni.fpt.edu.vn/Data/Sites/1/News/4545/ky-thuat-phan-mem-va-cong-nghe-thong-tin-(1).jpg"><span>CNTT</span> </div>
+        <div class="box"><img src="/dichvuphotocopytailieu.jpg"><span>Tài liệu khác</span></div>
+      </div>
+      <!-- End  Carousel -->
+     <div class="Menu">
       <!--Menu -->
-      <section class="menu-home">
-        <div class="container">
-          <div class="view-more menu-home">
-            <h2 class="menu_home_title line_after_heading section_heading">Menu</h2>
-            <a class="animate_btn" href="all.html" title="Xem tất cả sản phẩm">Xem tất cả sản phẩm</a>
-          </div>
-          
-          <section id="menus">    
-            <div class="menu-tile">
-              <div>
-                <iframe src="https://codepen.io/luciferanh/pen/NWNKpYW"></iframe>
-                <a href="https://codepen.io/luciferanh/pen/NWNKpYW">Open</a>
-              </div>
-              <header class="menu-title">Tribute Page</header>
-            </div>
+     <h1>Find your favorite book ...</h1>
+  
+ <div class="container">
+	<div class="row">
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 
-            <div class="menu-tile">
-              <div>
-                <iframe src="https://codepen.io/luciferanh/pen/jOqNwed"></iframe>
-                <a href="https://codepen.io/luciferanh/pen/jOqNwed">Open</a>
-              </div>
-              <header class="menu-title">Survey Form</header>
-            </div>
-
-            <div class="menu-tile">
-              <div>
-                <iframe src="https://codepen.io/luciferanh/pen/XWdrxdV"></iframe>
-                <a href="https://codepen.io/luciferanh/pen/XWdrxdV">Open</a>
-              </div>
-              <header class="menu-title">Landing Page</header>
-            </div>
- 
-            <div class="menu-tile">
-              <div>
-                <iframe src="https://codepen.io/luciferanh/pen/MWyejpo"></iframe>
-                <a href="https://codepen.io/luciferanh/pen/MWyejpo">Open</a>
-              </div>
-              <header class="menu-title">Documentation Page</header>
-            </div>
-
-            <div>
-              <li id="more" class="book-a-table text-center"><a id="moreText" href="more.html">Xem thêm</a>&nbsp;<i class="icofont-long-arrow-right"></i></li>
-            </div>
-          </section>
-        </div>
-      </section>
+		<div class="my-list">
+				<img src="https://lh4.ggpht.com/-OHrby82lS3c/V_gOxZLlrGI/AAAAAAAALXs/3u5YmpU1necb3PLHeUgfnQ42vUq6-2qHwCEw/s1600/sach%2Bnhap%2Bmon%2Blap%2Btrinh.jpg"  />
+			<h3>Nhập môn lập trình </h3> <span>KHTN</span>
+			<span class="pull-right">Price: 50,000đ</span>
+			<div class="offer">Giảm 10,000đ</div>
+			<div class="detail"><p>Sách pro đọc khó hiểu ( từ người đi trước đã đọc ) </p>
+			<img src="https://techmaster.vn/media/fileman/Uploads/users/5463/giaithuat-thumnail.png"  />
+		<a href="#" class="btn btn-info">Add To Cart</a>
+		<a href="#" class="btn btn-info">Detail</a></div>
+		</div>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+		<div class="my-list"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTKq6XhRZkMyA5FmVNev62apQg75JIxQC3JNQ&usqp=CAU" />
+			<h3>Triết học Mác Lênin</h3><span>Bộ giáo dục và đào </span>
+			<span class="pull-right">Price: 50,000đ</span>
+			<div class="offer">Giảm 10,000đ</div>
+			<div class="detail">
+			<p>Giá trị thặng dư không sinh ra trong lưu thông nhưng không nằm ngoài lưu thông</p>
+				<img src="https://lh3.googleusercontent.com/proxy/apKQmi4LkM9UL-IJIv-IG_eEfJmVQXpk2FriJBO72IPtRkojL2vLv3pNgUqSeXv31X070Oi0vWKMTfGTheABD7h2KNOqxvbb9LUs5A45twYv4X-nf3R1rcpdxmUlr-clHaSmJKB4_DWL3qJKc513lDA"  />
+		<a href="#" class="btn btn-info">Add To Cart</a>
+		<a href="#" class="btn btn-info">Detail</a>
+			</div>
+		</div>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+		<div class="my-list">
+			<img src="data:image/jpeg;base64,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"  />
+			<h3>Đại số tuyến tính </h3>
+			<span>Bách Khoa</span>
+			<span class="pull-right">Price: 50,000đ</span>
+			<div class="offer">Giảm 10,000đ</div>
+			<div class="detail">
+			<p>Dăn ba mấy toán cao cấp </p>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQtwGckH2iMiE90y0-zYeNk8CMQnEQD14ughw&usqp=CAU" />
+		<a href="#" class="btn btn-info">Add To Cart</a>
+		<a href="#" class="btn btn-info">Detail</a>
+			</div>
+		</div>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+		<div class="my-list">
+			<img src="http://hpservicecenterschennai.in/images/hp_laptop_service_centers_in_guindy.png"  />
+			<h3>Chuyên đề laptop </h3>
+			<span>RS:45K</span>
+			<span class="pull-right">Dell,Hp,Acer</span>
+			<div class="offer">Giảm 1 đồng</div>
+			<div class="detail">
+			<p>Vô dây mà  </p>
+				<img src="https://cdn.tgdd.vn/Files/2019/02/11/1149220/huawei-matebook-13-hands-on-13-1340x754_800x450.jpg" />
+			<a href="#" class="btn btn-info">Add To Cart</a>
+			<a href="#" class="btn btn-info">Deatail</a>
+			</div>
+		</div>
+		</div>
+		
+		</div>
+    </div>    
       <!--End Menu -->
-                  
       <section id="contact-section">
         <div class="section-title">Contact</div>
-        <form method="POST" action="https://formspree.io/amitsarangi44@gmail.com">
-            <div>Full name<input type="text" name="fullName" placeholder="Your full name" size="40" required></div>
-            <div>Email<input type="email" name="emailID" placeholder="Your email id" size="40" required></div>
-            <div>Webpage<input type="url" name="webPage" placeholder="Your web page" size="40"></div>
-            <div>Subject<textarea name="messageSubject" placeholder="Subject" rows="1" cols="35"></textarea></div>
-            <div>Leave a message<textarea name="message" placeholder="Your message" rows="5" cols="35"></textarea></div>
+        <form method="POST" action="">
+            <div><input type="text" name="fullName" placeholder="your full name" size="40" required></div>
+            <div><input type="email" name="emailID" placeholder="your email id" size="40" required></div>
+            <div><input type="url" name="webPage" placeholder="your web page" size="40"></div>
+            <div><textarea name="messageSubject" placeholder="subject" rows="1" cols="35"></textarea></div>
+            <div><textarea name="message" placeholder="your message" rows="5" cols="35"></textarea></div>
             <div><button type="submit">Submit</button></div>
         </form>
-      </section>
-                
-      <footer class="footer">
+    </section>
+    <footer class="footer">
         <div><a href="https://github.com/luciferanh" target="_blank" id="profile-link"><i class="fa fa-github" aria-hidden="true"></i> Visit github</a></div>
         <div class="footer-copy"></div>
-      </footer>
-
-      <nav id="navbar">
+    </footer>
+    <nav id="navbar">
         <a href="#welcome-section">about</a>
-        <a href="#menus">menus</a>
+        <a href="#projects">projects</a>
         <a href="#contact-section">contact</a>
-      </nav>
-                
-      <script type="text/javascript" src="https://gitcdn.link/repo/freeCodeCamp/testable-menus-fcc/master/build/bundle.js"></script>
-                
-      <script>
-        //Slide 
-        var myIndex = 0;
-        carousel();
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 2000); // Change image every 2 seconds
-        }
-        // End Slide 
-      </script>
+    </nav>
+  
     </main>
   </body>
 </html>
